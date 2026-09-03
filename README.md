@@ -4,7 +4,7 @@
 
 > Turn everyday sales and inventory data into predictions, signals, recommendations, and grounded business decisions.
 
-**Hackathon project · Next.js · TypeScript · Python · pandas · recharts · Groq / OpenAI-compatible LLM · Vercel**
+**Hackathon project · Next.js · TypeScript · Python · pandas · recharts · Gemini / OpenAI-compatible LLM · Vercel**
 
 **[Live demo](https://bizpilot-two.vercel.app)** · [GitHub repository](https://github.com/BinarySpecter/BizPilot)
 
@@ -154,15 +154,15 @@ Answers are grounded by default; an LLM is optional to configure. Create `.env.l
 
 ```bash
 LLM_API_KEY=your_key_here
-LLM_BASE_URL=https://api.groq.com/openai/v1
-LLM_MODEL=openai/gpt-oss-120b
+LLM_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai
+LLM_MODEL=gemini-3.5-flash-lite
 ```
 
 | Variable | Purpose |
 |---|---|
-| `LLM_API_KEY` | Groq API key for the reasoning layer (enables model answers) |
-| `LLM_BASE_URL` | Provider base URL — defaults to `https://api.groq.com/openai/v1` |
-| `LLM_MODEL` | Model id — defaults to `openai/gpt-oss-120b` |
+| `LLM_API_KEY` | Gemini API key for the reasoning layer (enables model answers) |
+| `LLM_BASE_URL` | Provider base URL — defaults to `https://generativelanguage.googleapis.com/v1beta/openai` |
+| `LLM_MODEL` | Model id — defaults to `gemini-3.5-flash-lite` |
 
 Security rules:
 

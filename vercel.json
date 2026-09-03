@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/analyze.py": { "maxDuration": 60 },
+    "api/chat.py": { "maxDuration": 60 },
+    "api/simulate.py": { "maxDuration": 60 },
+    "api/health.py": { "maxDuration": 15 }
+  }
+}

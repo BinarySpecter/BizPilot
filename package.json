@@ -1,0 +1,31 @@
+{
+  "name": "bizpilot-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BizPilot AI — AI-powered decision intelligence copilot for small businesses. Round 2 CodeBuild hackathon MVP.",
+  "scripts": {
+    "dev": "next dev",
+    "dev:api": "python3 scripts/dev_api.py",
+    "dev:all": "concurrently -n api,web -c blue,green \"npm run dev:api\" \"npm run dev\"",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "python3 -m pytest analytics/tests -q"
+  },
+  "dependencies": {
+    "next": "^16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "concurrently": "^9.1.2",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

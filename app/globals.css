@@ -729,6 +729,27 @@ input[type="range"].range::-moz-range-thumb {
   text-align: center;
 }
 
+/* Site attribution — quiet mono meta line, shared by the landing page and
+   the application shell footer. No icons, no badges, no motion. */
+.site-credits {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--ink-4);
+}
+.site-credits--landing {
+  max-width: 1264px;
+  margin: 32px auto 0;
+  padding: 14px 32px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.site-credits--dash {
+  margin-top: 18px;
+  text-align: center;
+}
+
 /* ------------------------------ app shell -------------------------------- */
 /* Persistent navigation + per-view workspaces. The page body scrolls; the
    sidebar stays pinned; each capability is a separate app view. */

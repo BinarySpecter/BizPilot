@@ -105,16 +105,26 @@ export default function Page() {
                 {" "}
                 Forecasts and what-if results are estimates, not guarantees.
               </div>
+              <div className="site-credits site-credits--dash">
+                Built for CoBuild CodeBuild 1.0 · Team Bits stream
+                <br />
+                Arnav Kaushik · Mukul Khanna · Chetan Chittori
+              </div>
             </footer>
           </main>
         </div>
       ) : stage.status === "idle" ? (
-        <main style={{ paddingBottom: 60 }}>
+        <main style={{ paddingBottom: 44 }}>
           <UploadPanel
             onFiles={handleFiles}
             onTryDemo={() => loadDemoView("overview")}
             onSeeEvidence={() => loadDemoView("actions")}
           />
+          <div className="site-credits site-credits--landing">
+            Built for CoBuild CodeBuild 1.0 · Team Bits stream
+            <br />
+            Arnav Kaushik · Mukul Khanna · Chetan Chittori
+          </div>
         </main>
       ) : (
         <main className="container" style={{ paddingBottom: 76 }}>
